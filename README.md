@@ -11,6 +11,8 @@
 $ python3 main.py
 ```
 
+> use a tecla `b` para realizar a junçao em c0
+
 ### Libs/Langs necessarias:
 - Pygame
 - Python3.8
