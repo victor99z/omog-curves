@@ -27,9 +27,7 @@ Bezier
 
 '''
 
-pos_list1 = [(104, 176), (164, 111), (241, 184), (284, 103), (339, 193), (470, 123)]  # Bezier
-
-bezier = Bezier(control_points=pos_list1)
+bezier = Bezier(control_points=[])
 
 '''
 
@@ -37,7 +35,6 @@ B-spline
 
 '''
 
-points = []
 
 bspline = Bspline(control_points=[])
 
@@ -87,8 +84,8 @@ while run:
     if len(bezier.control_points) == 6:
         bezier.draw_bezier(display)
 
-    if len(bspline.control_points) > 9:
-        print(bspline.control_points, bspline.degree, bspline.knots)
+    if len(bspline.control_points) == 9:
+        # print(bspline.control_points, bspline.degree, bspline.knots)
         bspline.draw_bspline(display)
 
     pygame.display.update()
