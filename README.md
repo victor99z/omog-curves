@@ -38,3 +38,8 @@ $ python3 main.py
 - Knots = degree + len(control_points) + 1
   - Repeticao nos knots = len(degree + 1) no inicio e no final
     - sendo 4 o degree {0,0,0,0,0, .... , 1,1,1,1,1}
+
+
+### TODO:
+
+- [ ] Junção em usando continuidade c1
