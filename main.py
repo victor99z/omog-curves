@@ -22,12 +22,12 @@ def draw_c0():
 
     draw_c1()
 
-    print(f' {bezier.control_points} {bspline.control_points} {coef_x, coef_y}')
+    print(f'c1: \n {bezier.control_points} {bspline.control_points} {coef_x, coef_y}')
 
 
 def draw_c1():
-    v1,v2 = bezier.control_points[-1], bezier.control_points[-2]
-    j1,j2 = bspline.control_points[1], bspline.control_points[2]
+    v1,v2 = bezier.control_points[-1], bezier.control_points[-2] # (x,y), (x,y)
+    j1,j2 = bspline.control_points[1], bspline.control_points[2] # (x,y), (x,y)
 
     vetor_bezier, vetor_bspline = (abs(v2[0] - v1[0]), abs(v2[1] - v1[1])), (abs(j1[0] - j2[0]), abs(j1[1] - j2[1]))
 
@@ -41,7 +41,7 @@ Bezier
 
 '''
 
-bezier = Bezier(control_points=[(84, 229), (163, 148), (205, 202), (319, 111), (392, 211), (317, 297)] )
+bezier = Bezier(control_points=[])
 
 '''
 
@@ -50,7 +50,8 @@ B-spline
 '''
 
 
-bspline = Bspline(control_points=[(317, 297), (241, 393), (385, 465), (464, 396), (611, 527), (510, 699), (321, 769), (273, 641), (371, 547)])
+bspline = Bspline(control_points=[])
+
 
 flag = True
 run = True
