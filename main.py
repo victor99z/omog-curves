@@ -65,7 +65,7 @@ Bezier
 
 '''
 
-bezier = Bezier(control_points=[(486, 252), (191, 103), (481, 57), (703, 190), (704, 366), (497, 582)])
+bezier = Bezier(control_points=[])
 
 '''
 
@@ -96,19 +96,15 @@ while run:
                 flag = True
             if event.key == pygame.K_b:
                 if len(bezier.control_points) == 6 and len(bspline.control_points) == 9:
-                    if flag:
-                        draw_c0()
-                        flag = False
+                    draw_c0()
             if event.key == pygame.K_n:
                 if len(bezier.control_points) == 6 and len(bspline.control_points) == 9:
-                    if flag:
-                        draw_c1()
-                        flag = False
+                    draw_c1()
+                    
             if event.key == pygame.K_m:
                 if len(bezier.control_points) == 6 and len(bspline.control_points) == 9:
-                    if flag:
-                        draw_c2()
-                        flag = False
+                    draw_c2()
+                        
 
     display.fill(0)
 
