@@ -52,7 +52,7 @@ def draw_c1():
 def draw_c2():
     draw_c0()
     v1, v2 = bezier.control_points[-1], bezier.control_points[-2]  # (x,y), (x,y)
-    j1, j2 = bspline.control_points[1], bspline.control_points[2]  # (x,y), (x,y)
+    j1, j2 = bspline.control_points[0], bspline.control_points[1]  # (x,y), (x,y)
 
     vetor_bezier = (v1[0] - v2[0]), (v1[1] - v2[1])
 
