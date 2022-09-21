@@ -44,4 +44,4 @@ $ python3 main.py
 
 - [x] Junção em usando continuidade C0
 - [x] Junção em usando continuidade ~~C1~~ G1
-- [x] Junção em usando continuidade ~~C2~~ G2
+- [ ] Junção em usando continuidade ~~C2~~ G2
